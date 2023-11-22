@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:note_sample/notes_page.dart';
 
-import 'main_page.dart';
 
 import 'package:hive_flutter/hive_flutter.dart';
 
@@ -53,8 +52,7 @@ class SplashScreenState extends State<SplashScreen> {
       builder: (context) => NotesPage(),
     ));
   }
-  String messageTitle = "Empty";
-  String notificationAlert = "alert";
+
 
 
   @override
@@ -77,12 +75,19 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.yellow[300],
       body: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child:  Center(
-          child: Text('Welcome to MyNotes',style: GoogleFonts.pacifico(fontSize: 35),),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset('images/note.png',height: 100,width: 100,),
+              SizedBox(height: 30,),
+              Text('Welcome to MyNotes',style: GoogleFonts.pacifico(fontSize: 35),),
+            ],
+          ),
           ),
         ),
       );

@@ -5,8 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
-import 'editor_page.dart';
-import 'note_mini.dart';
+import 'edit_note.dart';
+import 'note_ui.dart';
 
 class NotesPage extends StatefulWidget {
   const NotesPage({Key? key}) : super(key: key);
