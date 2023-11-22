@@ -1,4 +1,4 @@
-Task iven for me
+Task given for me
 
 TASK :
 To make a notes keeping app,
